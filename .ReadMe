@@ -1,0 +1,31 @@
+## Reasoning for your choice of automation software and reporting :
+- I have used TestNG framework beacuse it supports test parallelization, test prioritization, data-driven testing, 
+  grouping of test methods, and the ability to run tests with different configurations.
+- And for the reporting purpose TestNG generates detailed HTML reports by default, making it easy to 
+  track test execution results, identify failed tests, and view logs.  
+- I have also use Userdata.properties file beacuse it helps in  Separation of Test Data,
+  Ease of Maintenance, Reusability, Readability and also we can do customization.
+- This code can run in various CI/CD pipeline.
+- In this code we can also make Objectrepo file to store weblelements, so that the code will be easy to read
+  but in this code for now i have not added, but it can be done.  
+
+
+## Instructions to Run the Automation Code
+1. **Main Code Location:**
+   The primary automation code is located within the `src/test/java` directory. This directory contains the Java test classes that constitute your automation suite.
+2. **Executing the TestNG Suite:**
+   - Navigate to the `target` directory in your project structure.
+   - Inside the `target` directory, you will find a file named `testng.xml`.
+   - Right-click on the `testng.xml` file and select "Run As" -> "TestNG Suite."
+   The TestNG test suite will now commence execution, running the specified test cases.
+3. **Monitoring Test Execution:**
+   - During the execution, TestNG will execute the defined test methods as per your test classes.
+   - Monitor the progress as the automation tests run. The duration may vary based on the number and complexity of your test cases.
+4. **Generating TestNG Report:**
+   - After the completion of the test execution, you will observe that a test report is automatically generated. This report will be available in the "report" folder.
+5. **Accessing the TestNG Report:**
+   - To view the test report, navigate to the "report" folder.
+   - Right-click on the "report" folder and select "Open with" -> "WebBrowser."
+   The TestNG report will be displayed in your web browser, providing you with comprehensive insights into the test results, including pass/fail status, detailed logs, and any additional information configured within your test classes.
+6. **Review and Analysis:**
+   Inside the TestNG report, you can thoroughly review the outcomes of your test cases. Identify any test failures or issues and extract detailed information about the test execution.
